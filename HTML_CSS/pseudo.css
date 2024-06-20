@@ -37,3 +37,7 @@ div p:first-child{
 li:nth-child(2){
     background: red;
 }
+
+p:nth-of-type(2){
+    background: red;
+}
