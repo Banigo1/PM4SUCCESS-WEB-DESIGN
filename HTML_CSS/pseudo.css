@@ -34,3 +34,6 @@ div p:first-child{
 .nthoftype p:last-child{
     color: royalblue;
 }
+li:nth-child(2){
+    background: red;
+}
