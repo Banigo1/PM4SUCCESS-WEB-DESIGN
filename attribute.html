@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Examples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Attribute Selector Examples</h1>
+
+     <!-- Attribute selector for type=text -->
+    <input type="text" placeholder="Enter text here">
+    <input type="number" placeholder="Type placeholder">
+    <input type="email" value="Special@gmail.com">
+    
+    <!-- Select attribute -->
+    <div data-role="admin">Admin User</div>
+    <div data-role="user">Regular User</div>
+
+    <!-- Attribute value selector -->
+    <p class="special other-class">Special Paragraph</p>
+    <p class="other-class">Normal Paragraph</p>
+
+    <!-- Must contain or white space selector (~=) -->
+    <div class="special-container">
+        <div class="special">Special Div 1</div>
+        <div class="special other-class">Normal Div</div>
+        <div class="another-special">Not Special Div</div>
+        <div class="another-class special">Special Div 2</div>
+    </div>
+
+    <!-- The hyphen selector (|=) -->  
+    <p lang="en-">This paragraph is in English</p>
+    <p lang="en-us">This paragraph is in American English</p>
+
+    <!-- Attribute starts/begins with (^=) -->
+    <button id="button-primary">Primary Button</button>
+    <button id="button-secondary">Secondary Button</button>
+    <button id="secondary-button">Secondary Button</button>
+
+    <!-- Attribute ends with ($=) -->
+    <img src="images/accessories.jpg" width="100px" alt="Image 1" title="Image Special 1">
+    <img src="images/espadrille.png" width="100px" alt="Image 2">
+    <img src="images/BRITNY_LIGHTBEIGE.webp" width="100px" alt="Image 3" title="Special Icon">
+
+    <!-- Specific word in string (*=) -->
+     <div>
+         <p title="special Note">This is a special note.</p>
+         <p title="Note">This is a regular note.</p>
+         <p title="Note-special special">This is a regular note.</p>
+         <p title="special-note special">This is a regular note.</p>
+     </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Unvisited link */
+a:link{
+    color: red;
+}
+
+/* Visited link */
+a:visited{
+    color: green
+}
+
+/* Hover link */
+a:hover{
+    text-decoration: underline;
+    border: 2px solid;
+}
+
+/* Active link */
+a:active{
+    color:aquamarine;
+}
+
+/*Link Focus*/
+input:focus{
+/* background-color: brown; */
+border: solid;
+border-style: dashed;
+border-color: blue;
+}
+
+div p:first-child{
+    color: aqua;
+}
+
+.nthoftype p:last-child{
+    color: royalblue;
+}

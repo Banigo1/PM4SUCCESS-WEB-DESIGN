@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class Example</title>
+    <link rel="stylesheet" href="pseudo.css">
+    <style>
+        *{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>A pseudo-class is used to define a special state of an element.</h2>
+    <h2>A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to: Style the first letter, or line, of an element. Insert content before, or after, the content of an element</h2>
+
+    <a href="#dev">This is my link</a>
+
+        <!-- First and Last Child Example -->
+    <div class="first">
+        <p>This is the first paragraph.</p>
+        <a href="next.js">click me</a>
+        <p>This is the last paragraph.</p>
+    </div>
+
+    <!-- Nth Child Example -->
+
+    <div>
+         <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+    </div>
+
+    <!-- Nth Of Type Example -->
+
+    <div class="nthoftype">
+        <p>First paragraph in div</p>
+        <p>Second paragraph in div</p>
+        <p>Third paragraph in div</p>
+        <h2>This is a nth of type example</h2>
+    </div>
+
+    <!-- Not Selector Example -->
+
+    <div class="highlight">
+        Highlighted div
+    </div>
+
+    <div>
+        Non-highlighted div
+    </div>
+
+    <!-- Disabled Selector Example -->
+     <div>
+        <input type="text" value="Enabled Input">
+        <input type="text" value="Disabled Input" disabled>
+     </div>
+
+     <!-- Checked Selector Example -->
+     <div>
+        <input type="checkbox" id="checkbox1" checked>
+        <label for="checkbox1">Checked Checkbox</label>
+    </div>
+    <div>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">Unchecked Checkbox</label>
+    </div>
+    <div>
+        <input type="radio" id="radio1" name="radioGroup" checked>
+        <label for="radio1">Checked Radio Button</label>
+    </div>
+    <div>
+        <input type="radio" id="radio2" name="radioGroup">
+        <label for="radio2">Unchecked Radio Button</label>
+    </div>
+
+     <!-- css tooltip on hover -->
+    <div class="tooltip">Hover over this div element to show the p element
+        <p>Tada! Here I am!</p>
+    </div>
+
+      <!-- ::before and ::after -->
+       <!-- The ::before and ::after pseudo-elements are powerful tools in CSS that allow you to insert content before or after an element's actual content. They are commonly used for decorative purposes, adding icons, clearing floats, and more. -->
+
+        <p>This is a paragraph with added content before and after.</p>
+        <h4 class="info">This is an informational message.</h4>
+        <h4 class="warning">This is a warning message.</h4>
+
+        <!-- clear float example -->
+        <div class="clearfix">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+        <h4>Content after the floated boxes.</h4>
+
+        <!-- Marker -->
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+</body>
+</html>
