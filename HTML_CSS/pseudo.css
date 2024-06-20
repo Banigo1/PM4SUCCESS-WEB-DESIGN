@@ -31,6 +31,10 @@ div p:first-child{
     color: aqua;
 }
 
+div.first p:first-child{
+    color: purple;
+}
+
 .nthoftype p:last-child{
     color: royalblue;
 }
@@ -38,6 +42,24 @@ li:nth-child(2){
     background: red;
 }
 
+input:disabled{
+    background-color: lightseagreen;
+}
+
 p:nth-of-type(2){
     background: red;
+}
+
+p:nth-0f-type(2){
+    background-color: cyan;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: yellow;
+
+}
+
+input[type="radio"]:checked + label {
+    background-color: yellow;
+
 }
