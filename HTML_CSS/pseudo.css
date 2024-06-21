@@ -61,5 +61,64 @@ input[type="checkbox"]:checked + label {
 
 input[type="radio"]:checked + label {
     background-color: yellow;
+}
+p::before{
+    content: "Note: ";
+    font-weight: bold;
+    color: red;
+}
 
+p::after{
+    content: "[end]";
+    font-style : italic;
+    color: blue;
+}
+.box{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+/* Cleafix example */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* List Marker */
+::marker{
+    color: yellow;
+}
+
+::selection{
+    color: brown;
+    background-color: blue;
+
+}
+p::first-letter{
+    font-size: 42px;
+    color: blue;
+}
+
+h2::first-letter{
+    font-size: medium;
+    font-weight: 500;
+    font-family: cursive;
+
+}
+/* Tooltip */
+
+.tooltip p{
+    display: none;
+    background-color: blue;
+    color:bisque;
+    width: 100px;
+}
+
+div.tooltip:hover p {
+    display: block;
+    
 }

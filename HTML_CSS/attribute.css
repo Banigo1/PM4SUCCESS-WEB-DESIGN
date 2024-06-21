@@ -1,0 +1,41 @@
+input[type="number"]{
+    background-color: rgba(180, 209, 14, 0.5);
+    text-transform: uppercase;
+    color: blue;
+}
+[data-role]{
+    border: 2px dashed goldenrod;
+    width: 100px;
+    text-align: center;
+    text-overflow: ellipsis;
+    padding: 10px 10px;
+}
+[class="other-class"]{
+    border-radius: 25px;
+    border: 2px solid;
+    width: 200px;
+    text-align: center;
+    text-rendering: auto;
+}
+[class~="another-class"]{
+    background-color: rgb(189, 105, 12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+[lang|="en-us"]{
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(0, 255, 12);
+}
+[id^="button"]{
+    font-weight: bolder;
+    font-style: oblique;
+    color: blue;
+}
+img[src$="jpg"]{
+    border-radius: 30%;
+    border: 3px solid;
+}
+[title*="special"]{
+    color: crimson;
+}
